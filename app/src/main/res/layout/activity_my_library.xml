@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7CBCAD9C"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rgListState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbWishList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="위시리스트" />
+
+        <RadioButton
+            android:id="@+id/rbReadingList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="읽고 있는 책" />
+
+        <RadioButton
+            android:id="@+id/rbReadList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="독서록" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/lvMyBook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
